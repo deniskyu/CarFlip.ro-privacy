@@ -83,7 +83,7 @@
 <body>
 
     <h1>CarFlip</h1>
-    <p class="last-updated">Ultima actualizare: 24 martie 2026</p>
+    <p class="last-updated">Ultima actualizare: 22 iunie 2026</p>
 
     <h2>1. Termeni și condiții de utilizare</h2>
 
@@ -97,7 +97,7 @@
     <p>Pentru a crea un cont pe CarFlip, trebuie să ai vârsta minimă de 16 ani. Prin crearea contului, confirmi că ai împlinit această vârstă. Dacă ai între 16 și 18 ani, confirmi că ai obținut acordul unui părinte sau tutore legal pentru utilizarea platformei. Echipa CarFlip își rezervă dreptul de a solicita dovada vârstei și de a suspenda conturile utilizatorilor care nu îndeplinesc cerința de vârstă minimă.</p>
 
     <h3>1.4 Contul de utilizator</h3>
-    <p>Pentru a utiliza serviciile CarFlip, este necesară crearea unui cont cu o adresă de email validă și o parolă. Contul este activat prin verificarea unui cod OTP transmis pe email. Ești singurul responsabil pentru păstrarea confidențialității datelor tale de autentificare. Orice activitate desfășurată prin contul tău este responsabilitatea ta exclusivă. Un utilizator poate deține un singur cont activ. În cazul în care suspectezi o utilizare neautorizată a contului, te rugăm să ne contactezi imediat la carflip.ro@outlook.com.</p>
+    <p>Pentru a utiliza serviciile CarFlip, este necesară crearea unui cont cu o adresă de email validă și o parolă. Contul este activat prin verificarea unui cod OTP transmis pe email. Alternativ, îți poți crea contul și te poți autentifica folosind un cont Google (Google Sign-In) sau Apple (Sign in with Apple); în acest caz autentificarea se realizează prin furnizorul ales, iar contul nu necesită o parolă stabilită în aplicația noastră. Poți adăuga ulterior o parolă prin secțiunea de resetare a parolei, dacă dorești. Ești singurul responsabil pentru păstrarea confidențialității datelor tale de autentificare. Orice activitate desfășurată prin contul tău este responsabilitatea ta exclusivă. Un utilizator poate deține un singur cont activ. În cazul în care suspectezi o utilizare neautorizată a contului, te rugăm să ne contactezi imediat la carflip.ro@outlook.com.</p>
 
     <h3>1.5 Publicarea anunțurilor</h3>
     <p>Publicarea anunțurilor pe CarFlip este complet gratuită. Fiecare anunț este activ pentru o perioadă de 3 luni de la data publicării, după care expiră automat. Utilizatorul poate reactiva anunțul gratuit din secțiunea de profil. Ștergerea anunțului poate fi realizată oricând din aplicație. Anunțurile trec printr-un proces automat de procesare media (compresie imagini și video) înainte de publicare.</p>
@@ -144,7 +144,7 @@
     <h3>2.2 Date colectate</h3>
     <p>În cadrul utilizării aplicației CarFlip, colectăm următoarele categorii de date personale:</p>
     <ul>
-        <li>Informații de cont: nume de utilizator, adresă de email, parolă (stocată exclusiv în formă criptată cu algoritmul bcrypt)</li>
+        <li>Informații de cont: nume de utilizator, adresă de email, parolă (stocată exclusiv în formă criptată cu algoritmul bcrypt) sau identificatorii unici și profilul public de bază furnizate de Google/Apple în cazul autentificării prin servicii de tip OAuth (Sign-In). La autentificarea cu Apple poți alege să îți ascunzi adresa reală de email, caz în care primim o adresă de redirecționare anonimizată de tip privaterelay.appleid.com</li>
         <li>Conținut generat de utilizator: anunțuri, fotografii, videoclipuri, descrieri, comentarii, mesaje private</li>
         <li>Date tehnice: token-uri de notificare Firebase Cloud Messaging (FCM), tipul dispozitivului</li>
         <li>Date de utilizare: interacțiuni cu anunțurile (vizualizări, aprecieri), postări vizualizate</li>
@@ -184,6 +184,8 @@
     <ul>
         <li>Mailgun (Sinch Email) — transmiterea email-urilor tranzacționale</li>
         <li>Firebase Cloud Messaging (Google) — transmiterea notificărilor push</li>
+        <li>Google LLC — furnizarea serviciului de autentificare securizată Google Sign-In</li>
+        <li>Apple Inc. — furnizarea serviciului de autentificare securizată Sign in with Apple</li>
         <li>Cloudflare R2 (Cloudflare, Inc.) — stocarea fișierelor media (imagini, videoclipuri)</li>
         <li>MongoDB Atlas (MongoDB, Inc.) — stocarea bazei de date</li>
     </ul>
